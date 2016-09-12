@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.io Basics</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.messages{
+	height:200px;
+	overflow: auto;
+
+}
+
+/* This is
+a multi-line
+comment */
+</style>
+
+</head>
+
+<body>
+    
+    <div class="well col-sm-2">
+        <div class="panel panel-primary">
+        <div class="panel-heading">
+        <h4 class=" panel-title room-title"><!-- Room name (use jQuery) --></h4>
+        </div>
+            <div class="panel-body">
+                
+             
+                <div class="messages">
+                    <!-- Set max height and overflow -->
+                    <!-- Messages end up here! -->
+                </div>
+                <form id="message-form">
+                    <input type="text" name="message" class="form-control" placeholder="Message" />
+                    <input type="submit" class="btn-sm btn-primary" />
+                    <!-- Link button to return key -->
+                </form>
+            </div>
+            <div class="pannel-footer">
+            	 <a href="/index.html" class="text-center"><p class="text-center">Invite a friend</p></a>
+            	 <a href="/index.html"><p class="text-center">Exit Room</p></a><!--  Link should open new tab for email or SMS invite -->
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/socket.io-1.3.7.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/QueryParams.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
